@@ -27,6 +27,11 @@ workspace "BigBaseC"
   inlining "auto"
   optimize "speed"
 
+  linkoptions
+  {
+    "/MANIFEST:NO"
+  }
+
   filter "configurations:Dist"
     flags { "LinkTimeOptimization" }
 
